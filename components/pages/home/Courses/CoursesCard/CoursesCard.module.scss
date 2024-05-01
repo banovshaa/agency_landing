@@ -1,0 +1,56 @@
+.card {
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #e5e5e5;
+  position: relative;
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  & .badge {
+    position: absolute;
+    left: 42px;
+    top: 46px;
+  }
+  &__texts {
+    & h4 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      margin: 24px 0 8px;
+    }
+    .author {
+      color: #737373;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.28px;
+    }
+    .duration {
+      display: flex;
+      column-gap: 5px;
+      margin: 20px 0 24px;
+      & p {
+        color: #171717;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.28px;
+        & span {
+          font-weight: 500;
+        }
+      }
+    }
+    .price {
+      color: #737373;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.28px;
+      margin-bottom: 8px;
+    }
+  }
+  &__button {
+    & button {
+      width: 100%;
+    }
+  }
+}

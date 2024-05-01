@@ -1,0 +1,26 @@
+.about__me {
+  background: url("../../../../assets/images/home/about_me/about_me_bg.png")
+    lightgray 50% / cover no-repeat;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .content {
+    width: 65%;
+    & h2 {
+      color: #fff;
+      text-align: center;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 48px;
+    }
+    & p {
+      color: #fff;
+      text-align: center;
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 38px;
+      margin-top: 32px;
+    }
+  }
+}

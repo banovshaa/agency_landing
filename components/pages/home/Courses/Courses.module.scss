@@ -1,0 +1,12 @@
+.courses {
+  padding-bottom: 128px;
+  padding-top: 128px;
+  overflow: hidden;
+  & h3 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 38px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,47 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  &__right {
+    align-items: center;
+    column-gap: 20px;
+    display: flex;
+    & nav {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      & a {
+        color: #171717;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        padding: 10px;
+        &.contact__btn {
+          align-items: center;
+          background: #8b5cf6;
+          border-radius: 8px;
+          color: #ffffff;
+          display: flex;
+          font-size: 16px;
+          height: 44px;
+          justify-content: center;
+          letter-spacing: 0.32px;
+          line-height: 16px;
+          padding: 10px 24px;
+        }
+      }
+    }
+    & .dark__mode__btn {
+      align-items: center;
+      background: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #e5e5e5;
+      display: flex;
+      height: 46px;
+      justify-content: center;
+      width: 46px;
+    }
+  }
+}
