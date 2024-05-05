@@ -2,6 +2,7 @@ import CustomButton from "@/components/shared/CustomButton/CustomButton";
 import styles from "./Hero.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import { heroImages } from "@/constants/images/homeImages.constant";
 
 const Hero = () => {
   return (
@@ -21,16 +22,13 @@ const Hero = () => {
           />
           <Link href={"/"}>
             <span>Watch video</span>
-            <Image
-              src={require("@/assets/images/icons/arrow_right.svg")}
-              alt="arrow right icon"
-            />
+            <Image src={heroImages.arrowRight} alt="arrow right icon" />
           </Link>
         </div>
       </div>
       <Image
         className={styles.background_image}
-        src={require("@/assets/images/home/hero/bg.png")}
+        src={heroImages.backgroundImage}
         alt={"bg image"}
       />
     </section>

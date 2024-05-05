@@ -1,10 +1,9 @@
 "use client";
-
-import CourseImage from "@/assets/images/home/courses/card_image.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import CoursesCard from "../CoursesCard/CoursesCard";
+import { coursesImages } from "@/constants/images/homeImages.constant";
 const CoursesSwiper = () => {
   return (
     <Swiper
@@ -20,22 +19,22 @@ const CoursesSwiper = () => {
           spaceBetween: 30,
         },
         993: {
-          slidesPerView: 2,
+          slidesPerView: 2.2,
           spaceBetween: 24,
         },
         480: {
-          slidesPerView: 1,
+          slidesPerView: 1.1,
           spaceBetween: 12,
         },
         0: {
-          slidesPerView: 1,
+          slidesPerView: 1.1,
           spaceBetween: 12,
         },
       }}
     >
       <SwiperSlide>
         <CoursesCard
-          image={CourseImage}
+          image={coursesImages.cardImage}
           texts={{
             type: "Development",
             title: "Frontend Development with JavaScript",
@@ -50,7 +49,7 @@ const CoursesSwiper = () => {
       </SwiperSlide>
       <SwiperSlide>
         <CoursesCard
-          image={CourseImage}
+          image={coursesImages.cardImage}
           texts={{
             type: "Development",
             title: "Backend Development with Python",
@@ -65,7 +64,7 @@ const CoursesSwiper = () => {
       </SwiperSlide>
       <SwiperSlide>
         <CoursesCard
-          image={CourseImage}
+          image={coursesImages.cardImage}
           texts={{
             type: "Development",
             title: "Frontend Development with JavaScript",
@@ -80,7 +79,7 @@ const CoursesSwiper = () => {
       </SwiperSlide>
       <SwiperSlide>
         <CoursesCard
-          image={CourseImage}
+          image={coursesImages.cardImage}
           texts={{
             type: "Development",
             title: "Backend Development with Python",

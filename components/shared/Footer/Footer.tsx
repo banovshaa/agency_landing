@@ -1,13 +1,8 @@
 import Image from "next/image";
 import styles from "./Footer.module.scss";
 import Logo from "@/assets/images/Logo.svg";
-import InstaIcon from "@/assets/images/icons/instagram.svg";
-import MediumIcon from "@/assets/images/icons/medium.svg";
-import LinkedInIcon from "@/assets/images/icons/linkedin.svg";
-import TwitterIcon from "@/assets/images/icons/twitter.svg";
-import TelegramIcon from "@/assets/images/icons/telegram.svg";
-import FigmaIcon from "@/assets/images/icons/figma.svg";
 import Link from "next/link";
+import { footerImages } from "@/constants/images/footerImages.constant";
 
 const Footer = () => {
   return (
@@ -16,22 +11,22 @@ const Footer = () => {
         <Image src={Logo} alt="Logo" />
         <div className={styles.media}>
           <div className={styles.box}>
-            <Image src={InstaIcon} alt="InstaIcon" />
+            <Image src={footerImages.instagram} alt="InstaIcon" />
           </div>
           <div className={styles.box}>
-            <Image src={FigmaIcon} alt="FigmaIcon" />
+            <Image src={footerImages.figma} alt="FigmaIcon" />
           </div>
           <div className={styles.box}>
-            <Image src={LinkedInIcon} alt="LinkedInIcon" />
+            <Image src={footerImages.linkedin} alt="LinkedInIcon" />
           </div>
           <div className={styles.box}>
-            <Image src={TwitterIcon} alt="TwitterIcon" />
+            <Image src={footerImages.twitter} alt="TwitterIcon" />
           </div>
           <div className={styles.box}>
-            <Image src={TelegramIcon} alt="TelegramIcon" />
+            <Image src={footerImages.telegram} alt="TelegramIcon" />
           </div>
           <div className={styles.box}>
-            <Image src={MediumIcon} alt="MediumIcon" />
+            <Image src={footerImages.medium} alt="MediumIcon" />
           </div>
         </div>
       </div>

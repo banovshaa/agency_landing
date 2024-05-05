@@ -1,13 +1,11 @@
 import styles from "./Discover.module.scss";
 import DiscoverCard from "./DiscoverCard/DiscoverCard";
-import ComputerImage from "@/assets/images/home/discover/computer.png";
-import CommunityImage from "@/assets/images/home/discover/community.png";
-import ChatImage from "@/assets/images/home/discover/chat.png";
+import { discoverImages } from "@/constants/images/homeImages.constant";
 const Discover = () => {
   return (
     <section className={`${styles.discover} container`}>
       <DiscoverCard
-        image={ComputerImage}
+        image={discoverImages.computer}
         texts={{
           title: "Explore topics",
           description:
@@ -15,7 +13,7 @@ const Discover = () => {
         }}
       />
       <DiscoverCard
-        image={CommunityImage}
+        image={discoverImages.community}
         texts={{
           title: "Meet new Friends",
           description:
@@ -23,7 +21,7 @@ const Discover = () => {
         }}
       />
       <DiscoverCard
-        image={ChatImage}
+        image={discoverImages.chat}
         texts={{
           title: "Find",
           description:

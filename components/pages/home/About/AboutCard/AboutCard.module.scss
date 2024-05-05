@@ -19,3 +19,17 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .card {
+    &__texts {
+      & h4 {
+        font-size: 30px;
+      }
+      & p {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+  }
+}

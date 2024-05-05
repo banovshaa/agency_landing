@@ -2,7 +2,7 @@ import styles from "./AboutMe.module.scss";
 
 const AboutMe = () => {
   return (
-    <section className={`${styles.about__me}`}>
+    <section className={`${styles.about__me} container`}>
       <div className={styles.content}>
         <h2>Emily Rolando</h2>
         <p>

@@ -4,3 +4,10 @@
   display: flex;
   column-gap: 15px;
 }
+
+@media (max-width: 1200px) {
+  .about {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}

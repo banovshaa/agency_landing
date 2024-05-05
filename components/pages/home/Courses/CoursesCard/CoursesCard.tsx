@@ -1,6 +1,7 @@
 import CustomButton from "@/components/shared/CustomButton/CustomButton";
 import styles from "./CoursesCard.module.scss";
 import Image, { StaticImageData } from "next/image";
+import TimerIcon from "@/assets/images/icons/timer.svg";
 
 type CoursesCardTexts = {
   type: string;
@@ -29,10 +30,7 @@ const CoursesCard = ({ texts, image }: CoursesCardProps) => {
           By {texts.tuitor_firstname} {texts.tuitor_lastname}
         </p>
         <div className={styles.duration}>
-          <Image
-            src={require("@/assets/images/icons/timer.svg")}
-            alt="timer icon"
-          />
+          <Image src={TimerIcon} alt="timer icon" />
           <p>
             <span>Duration:</span> {texts.duration}
           </p>

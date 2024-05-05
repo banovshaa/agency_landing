@@ -6,7 +6,7 @@
   padding-top: 140px;
   position: relative;
   &__texts {
-    width: 787px;
+    width: 54%;
     & h1 {
       color: #262626;
       text-align: center;
@@ -51,5 +51,47 @@
     width: 100%;
     object-fit: contain;
     z-index: -1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    &__texts {
+      width: 85%;
+    }
+  }
+}
+
+@media (max-width: 993px) {
+  .hero {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    &__texts {
+      & h1 {
+        font-size: 60px;
+        line-height: 66px;
+      }
+      & p {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-bottom: 112px;
+    padding-top: 112px;
+    &__texts {
+      & h1 {
+        font-size: 38px;
+        line-height: 38px;
+      }
+      & p {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
   }
 }

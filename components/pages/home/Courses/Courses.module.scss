@@ -10,3 +10,11 @@
     text-align: center;
   }
 }
+
+@media (max-width: 480px) {
+  .courses {
+    & h3 {
+      font-size: 30px;
+    }
+  }
+}
